@@ -6,15 +6,15 @@ namespace OefeningBoekBoekenrek
 {
     public  class Boek:IVoorwerpen
     {
-        private string eigenaarValue;
+        
         private decimal aankoopprijsValue;
 
         public string Titel { get; set; }
         public string Auteur { get; set; }
-        public string Eigenaar
+        public static string Eigenaar
         {
-            get { return eigenaarValue; }
-            set { eigenaarValue = value; }
+            get { return "VDAB"; }
+            
         }
         public decimal Aankoopprijs
         {
@@ -33,16 +33,17 @@ namespace OefeningBoekBoekenrek
             Console.WriteLine($"Eigenaar: {Eigenaar}");
             Console.WriteLine($"Prijs: {Aankoopprijs}");
             Console.WriteLine($"Winst: {Winst}");
-            Console.WriteLine($"Genre: {GenreNaam}");
+            Console.WriteLine($"Genre Gegevens :");
+            Console.WriteLine($"{GenreNaam}");
 
-            
+
 
         }
-        public Boek(string titel, string auteur, string eigenaar, decimal aankoopprijs, Genre genreNaam)
+        public Boek(string titel, string auteur, decimal aankoopprijs, Genre genreNaam)
         {
             this.Titel = titel;
             this.Auteur = auteur;
-            this.Eigenaar = eigenaar;
+            
             this.Aankoopprijs = aankoopprijs;
             this.GenreNaam = genreNaam;
         }

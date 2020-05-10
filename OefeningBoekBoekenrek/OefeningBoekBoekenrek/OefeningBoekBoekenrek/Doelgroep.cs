@@ -18,10 +18,6 @@ namespace OefeningBoekBoekenrek
             {
 
                 leeftijdValue = value;
-                if (value >= 18)
-                    leeftijdsCategorieValue = Categorie.Volwassen;
-                else
-                    leeftijdsCategorieValue = Categorie.Jeugd;
 
             }
         }
@@ -33,12 +29,12 @@ namespace OefeningBoekBoekenrek
         }
 
 
-        private Categorie leeftijdsCategorieValue;
-        public Categorie LeeftijdsCategorie
+        
+        public Categorie categorie
         {
             get
             {
-                return leeftijdsCategorieValue;
+                return (Leeftijd < 18 ? Categorie.Jeugd : Categorie.Volwassen);
             }
             set { }
         }
@@ -57,7 +53,7 @@ namespace OefeningBoekBoekenrek
         {
 
 
-            return $" {Leeftijd} Categorie : {LeeftijdsCategorie}";
+            return $" {Leeftijd} Categorie : {categorie}";
 
 
         }

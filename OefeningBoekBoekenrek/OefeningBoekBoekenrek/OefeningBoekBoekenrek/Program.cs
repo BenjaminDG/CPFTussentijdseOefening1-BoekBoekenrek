@@ -13,8 +13,8 @@ namespace OefeningBoekBoekenrek
             Genre Vreemd = new Genre("Vreemd", LeeftijdWoord);
             
             IVoorwerpen[] voorwerpen = new IVoorwerpen[3];
-            voorwerpen[0] = new Leesboek("Harry Potter", "J.K Rowling","VDAB",20M, Fictie, LeeftijdLees,"Toveren");
-            voorwerpen[1] = new Woordenboek("Vandale", "Kramers","VDAB",100m, Vreemd, LeeftijdWoord,"NL-E");
+            voorwerpen[0] = new Leesboek("Harry Potter", "J.K Rowling",20M, Fictie, LeeftijdLees,"Toveren");
+            voorwerpen[1] = new Woordenboek("Vandale", "Kramers",100m, Vreemd, LeeftijdWoord,"NL-E");
             voorwerpen[2] = new BoekenRek(2.5M, 3M, 200);
             LijnenTrekker lijnenTrekker = new LijnenTrekker(); 
 

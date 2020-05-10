@@ -11,11 +11,12 @@ namespace OefeningBoekBoekenrek
 
         public Doelgroep Doelgroep { get; set;  }
 
-      /*  public override void GegevensTonen()
+        public  void GegevensTonen()
         {
-            base.GegevensTonen();
+            
             Console.WriteLine($"Naam: {Naam}");
-        }*/
+        }
+        
 
         public Genre (string naam, Doelgroep doelgroep)
         {
@@ -25,7 +26,7 @@ namespace OefeningBoekBoekenrek
             
         }
 
-        public override string ToString()
+       public override string ToString()
         {
             return  
                 $" Genrenaam :  {Naam}    Leeftijd : {Doelgroep}"; 

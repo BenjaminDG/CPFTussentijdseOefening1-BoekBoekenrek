@@ -21,7 +21,7 @@ namespace OefeningBoekBoekenrek
             Console.WriteLine($"Taal: {Taal}");
         }
 
-        public Woordenboek(string titel, string auteur, string eigenaar, decimal aankoopprijs,Genre genreNaam, Doelgroep doelgroep,string taal) : base(titel, auteur, eigenaar, aankoopprijs, genreNaam)
+        public Woordenboek(string titel, string auteur, decimal aankoopprijs,Genre genreNaam, Doelgroep doelgroep,string taal) : base(titel, auteur, aankoopprijs, genreNaam)
         {
             Taal = taal;
         }
