@@ -31,11 +31,13 @@ namespace OefeningBoekBoekenrek
             Console.WriteLine($"Titel: {Titel}");
             Console.WriteLine($"Auteur: {Auteur}");
             Console.WriteLine($"Eigenaar: {Eigenaar}");
-            Console.WriteLine($"Prijs: {Aankoopprijs}");
-            Console.WriteLine($"Winst: {Winst}");
+            Console.WriteLine($"Prijs: {Aankoopprijs} euro");
+            Console.WriteLine($"Winst: {Winst} euro");
             Console.WriteLine($"Genre Gegevens :");
-            Console.WriteLine($"{GenreNaam}");
-
+            Console.WriteLine($"Genre : {GenreNaam.Naam}");
+            Console.WriteLine($"Doelgroepgegevens: ");
+            Console.WriteLine($"Leeftijd : {GenreNaam.Doelgroep.Leeftijd}");
+            Console.WriteLine($"Categorie : {GenreNaam.Doelgroep.categorie}");
 
 
         }

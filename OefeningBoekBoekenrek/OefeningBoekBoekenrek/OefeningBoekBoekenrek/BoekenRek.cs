@@ -16,8 +16,8 @@ namespace OefeningBoekBoekenrek
         {
             Console.WriteLine($"Hoogte: {Hoogte}");
             Console.WriteLine($"Breedte: {Breedte}");
-            Console.WriteLine($"Aankoopprijs: {Aankoopprijs}");
-            Console.WriteLine($"Winst: {Winst}");
+            Console.WriteLine($"Aankoopprijs: {Aankoopprijs} euro");
+            Console.WriteLine($"Winst: {Winst} euro");
         }
 
         public BoekenRek(decimal hoogte, decimal breedte, decimal aankoopprijs)
